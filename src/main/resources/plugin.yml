@@ -1,0 +1,4 @@
+name: MidoriWhitelist
+version: '1.0'
+main: net.midorichan.midoriWhitelist.MidoriWhitelist
+api-version: '1.21'
