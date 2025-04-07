@@ -1,4 +1,26 @@
 name: MidoriWhitelist
-version: '1.0'
+version: 1.2
 main: net.midorichan.midoriWhitelist.MidoriWhitelist
-api-version: '1.21'
+author: Midori Sakurai
+description: A simple whitelist plugin for Minecraft servers.
+website: https://twitter.com/m1dori_otaku
+
+commands:
+  whitelist:
+    description: Whitelist Command
+    usage: /<command> [args]
+    default: op
+
+permissions:
+  midoriwhitelist.*:
+    description: Allows the player to use all MidoriWhitelist commands.
+    default: op
+    children:
+      midoriwhitelist.command: true
+      midoriwhitelist.notify: true
+  midoriwhitelist.command:
+    description: Allows the player to use the whitelist command.
+    default: op
+  midoriwhitelist.notify:
+    description: Allows the player to receive notifications about whitelist changes.
+    default: op
